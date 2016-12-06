@@ -1,0 +1,42 @@
+body{
+    margin:0
+}
+.key{
+    display: inline-block;
+    margin:0;
+    height:50vh;
+    max-height: 15vw;
+    width:50vh;
+    max-width: 15vw;
+    background-color: #eee;
+    border-radius:10%;
+    border-color:#ccc;
+    border-style: solid;
+}
+p{
+    margin:0;
+    height:100vh;
+    max-height: 30vw;
+    text-align: center;
+    vertical-align: middle;
+    font-family:sans-serif;
+    
+}
+@media (max-aspect-ratio: 319/96){
+    p{
+        line-height: 15vw;
+        font-size: 15vw;
+    }
+    .key{
+        border-width:0.7vw;
+    }
+}
+@media (min-aspect-ratio: 319/96){
+    p{
+        line-height: 50vh;
+        font-size: 50vh;
+    }
+    .key{
+        border-width:0.7vh;
+    }
+}
